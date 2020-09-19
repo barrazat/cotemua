@@ -26,6 +26,7 @@
 html{
     font-size: 10px;
     font-family: 'Kumbh Sans', sans-serif;
+    font-weight: lighter;
 }
 
 body{
@@ -52,23 +53,78 @@ body{
     background-size: cover;
     width: 100%;
     height: 94vh;
-    text-align: center;
+    text-align: justify;
     align-items: center;
-    display: flex;
     justify-content: center;
+    display: flex;
 }
 
-.nose{
-    width: 80%;
-    height: 94vh;
-    text-align: center;
+.mid-main-box{
+    width: 30%;
+    height: 80%;
     align-items: center;
     display: flex;
     justify-content: center;
+    font-size: 15px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,.2);
+    backdrop-filter: blur(50px) saturate(300%);
+    -webkit-backdrop-filter: blur(50px) saturate(300%);
+    -moz-backdrop-filter: blur(50px) saturate(300%);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+}
+
+.mid-group{
+    width: 90%;
+    height: 90%;
+}
+
+.mid-group h2{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.serv-photo{
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.serv-one{
+    background-image: url("../img/1-serv.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serv-two{
+    background-image: url("../img/2-serv.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.serv-three{
+    background-image: url("../img/3-serv.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.mid-text{
+    color: #ffff;
 }
 
 .main-box{
-    backdrop-filter: blur(50px) saturate(180%);
+    backdrop-filter: blur(50px) saturate(300%);
+    -webkit-backdrop-filter: blur(50px) saturate(300%);
+    -moz-backdrop-filter: blur(50px) saturate(300%);
+    background-color: rgba(255,255,255,.25);
     width: 60%;
     height: 100%;
     align-items: center;
@@ -104,61 +160,6 @@ body{
     margin-bottom: 15px;
 }
 
-.mid-main-box{
-    backdrop-filter: blur(50px) saturate(180%);
-    width: 30%;
-    height: 80%;
-    font-size: 15px;
-    margin: 0 auto;
-    border-radius: 20px;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);  
-    text-align: justify;
-}
-
-.mid-main-box h2{
-    text-align: center;
-}
-
-.mid-main-box .mid-photo{
-    margin: 16px auto;
-}
-
-.mid-photo{
-    width: 90%;
-    height: 60%;
-    border-radius: 20px;
-}
-
-.serv-one{
-    background-image: url("../img/1-serv.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.serv-two{
-    background-image: url("../img/2-serv.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.serv-three{
-    background-image: url("../img/3-serv.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-.mid-text-box{
-    width: 90%;
-    margin: 0 auto;
-    color: #ffff;
-}
-
-.mid-text-box h2{
-    margin-bottom: 10px;
-}
-
 a{
     display: flex;
     text-decoration: none;
@@ -176,10 +177,12 @@ header{
     top: 0;
     z-index: 1400;
     width: 100%;
-    height: 5.9vh;
-    background-color: rgba(0,0,0,1);
+    height: 6vh;
+    background-color: rgba(0,0,0,.9);
     backdrop-filter: blur(2rem);
-    border-bottom: 1px solid rgba(0,0,0,.2);
+    -webkit-backdrop-filter: blur(2rem);
+    -moz-backdrop-filter: blur(2rem);
+    
 }
 
 .nav-list{
@@ -256,15 +259,15 @@ header{
         width: 2rem;
         height: 1px;
         background-color: #ffff;
-        transition: margin-top .3192s cubic-bezier(0.04, 0.4, 0.12, 0.96);
+        transition: margin-top .7s cubic-bezier(0.04, 0.4, 0.12, 0.96);
     }
 
     .line-top{
-        margin-top: 5px;
+        margin-top: 3px;
     }
 
     .line-bottom{
-        margin-top: -1.2rem;
+        margin-top: -1rem;
     }
 
     .nav-logo{
@@ -276,24 +279,23 @@ header{
     .namesito{
         margin: 0 auto;
         color: #ffff;
-        color: lightsalmon;
     }
 
     .active .line-top{
         margin-top: 0;
         transform: rotate(45deg);
-        transition: transform .3192s .1s cubic-bezier(0.04, 0.4, 0.12, 0.96);
+        transition: transform .7s  cubic-bezier(0.04, 0.4, 0.12, 0.96);
     }
 
     .active .line-bottom{
         margin-top: 0;
         transform: rotate(-45deg);
-        transition: transform .3192s .1s cubic-bezier(0.04, 0.4, 0.12, 0.96);
+        transition: transform .7s  cubic-bezier(0.04, 0.4, 0.12, 0.96);
     }
 
     header.active{
         height: 100%;
-        background-color: rgba(0,0,0,.4);
+        background-color: rgba(255,255,255,.1);
         transition: 1s;
     }
 
@@ -352,14 +354,13 @@ header{
     }
 
     .main-box{
-        backdrop-filter: blur(50px);
-        border-radius: 20px;
+        border-radius: 10px;
         margin: 0 auto;
         width: 90%;
         height: 90%;
-        -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.30);
-        -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.30);
-        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.30);        
+        -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+        -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+        box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);        
     }
 
     .main-group{
@@ -373,23 +374,19 @@ header{
 
     .mid-container{
         height: 200vh;
-        text-align: center;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .nose{
         display: grid;
-        width: 100%;
-        height: 100%;
     }
     
     .mid-main-box{
-        font-size: 15px;
         width: 90%;
-        height: 95%;
+        height: 90%;
+        margin: 0 auto;
     }
+
+    .mid-group{
+        font-size: 18px;
+    }
+
 
     @keyframes fadeIn{
         from{
