@@ -1,0 +1,113 @@
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-250px * 5));
+   }
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 94vh;
+}
+
+.blur{
+    background-color: rgba(255,255,255,.1);
+    width: 40%;
+    height: 15vh;
+    backdrop-filter: blur(50px) saturate(300%);
+    -webkit-backdrop-filter: blur(50px) saturate(300%);
+    -moz-backdrop-filter: blur(50px) saturate(300%);
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.10);
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.blur h2{
+    color: #ffff;
+    font-size: 50px;
+}
+
+.slider::after {
+    transform: rotateZ(180deg);
+}
+
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+
+.slider .slide {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider .slide:nth-child(1){
+    background-image: url("../img/gallery/1.jpg");
+}
+
+.slider .slide:nth-child(2){
+    background-image: url("../img/gallery/2.jpg");
+}
+
+.slider .slide:nth-child(3){
+    background-image: url("../img/gallery/3.jpg");
+}
+
+.slider .slide:nth-child(4){
+    background-image: url("../img/gallery/4.jpg");
+}
+
+.slider .slide:nth-child(5){
+    background-image: url("../img/gallery/5.jpg");
+}
+
+.slider .slide:nth-child(6){
+    background-image: url("../img/gallery/6.jpg");
+}
+
+.slider .slide:nth-child(7){
+    background-image: url("../img/gallery/7.jpg");
+}
+
+.slider .slide:nth-child(8){
+    background-image: url("../img/gallery/8.jpg");
+}
+
+.slider .slide:nth-child(9){
+    background-image: url("../img/gallery/9.jpg");
+}
+
+.slider .slide:nth-child(10){
+    background-image: url("../img/gallery/10.jpg");
+}
+
+@media screen and (max-width: 800px){
+    .blur{
+        width: 80%;
+        height: 13vh;
+    }
+
+    .blur h2{
+        color: #ffff;
+        font-size: 30px;
+    }
+}
